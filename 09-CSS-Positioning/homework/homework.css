@@ -7,7 +7,8 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-
+    display: block;
+    text-align: center;
 }
 
 
@@ -15,24 +16,80 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Acá va tu código */
 
+#ejercicioDos{
+    /* opacity: 0; */ /*Lo oculta pero conserva espacio*/
+    /* visibility: hidden; */ /*Lo oculta pero conserva espacio*/
+    display: none; /*lo oculta pero no conserva el espacio*/
+}
+
 
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
-
+#ejercicioTres{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
 
+#ejercicioCuatro {
+    position:fixed;
+    width: 100%;
+    top: 0;
+}
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
 
+#ejercicioCinco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 
 /* Ejercicio 6. */
+#ejercicioCinco {   
+    flex-direction: row-reverse; 
+}
+
+/* Ejercicio 7. */
+#ejercicioSiete {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+#elementoUno{
+    /* order: 4; */
+    flex-basis: 40%;
+    align-self:center;
+}
+
+#elementoDos{
+    align-self:flex-start;
+    flex-grow: 1;
+    /* order: 3; */
+}
+
+#elementoTres{
+    /* order: 1; */
+    flex-grow: 1;
+    align-self:flex-end;
+}
+
+#elementoCuatro{
+    /* order: 1; */
+    align-self: center;
+}
